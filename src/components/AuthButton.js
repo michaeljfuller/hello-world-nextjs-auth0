@@ -26,7 +26,7 @@ export default function AuthButton() {
     return <button className={className} disabled>Loading...</button>
   }
   if (auth.isAuthenticated) {
-    return <button className={className} onClick={logOut} disabled={isLoggingOut}>Log Out {auth.user?.name}</button>
+    return <button className={className} onClick={logOut} disabled={isLoggingOut}>Log Out {auth.user?.nickname}</button>
   }
   return <button className={className} onClick={logIn} disabled={isLoggingIn}>Log In</button>
 }
